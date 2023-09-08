@@ -1,0 +1,2 @@
+#!/bin/bash
+FILENAME=$(basename "$CFILE" .c) | gcc -S "$CFILE" -o "$FILENAME.s"
