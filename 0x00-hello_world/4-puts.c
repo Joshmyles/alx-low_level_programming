@@ -1,7 +1,5 @@
 #include <stdio.h>
-/*Normal output*/
-int main(void) /*Normal output*/
-/*Normal output*/
+/*Normal output*/int main(void)/*Normal output*/
 {
 /*Normal output*/
 puts("\"Programming is like building a multilingual puzzle");
