@@ -1,13 +1,12 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /*comment*/int main(void)/*comment*/
 {
-int i;
-for (i = 0; i <= 9; ++i)
+char digit;
+for (digit = '0'; digit <= '9'; digit++)
 {
-putchar(char(i));
-putchar('\n');
+putchar(digit);
 }
+putchar('\n');
 return (0);
 }
-
