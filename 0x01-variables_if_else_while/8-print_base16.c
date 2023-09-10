@@ -2,7 +2,8 @@
 
 /*comment*/int main(void)/*comment*/
 {
-char hexDigits[] = "0123456789abcdef";
+char hexDigits[] = 16; 
+hexDigits = "0123456789abcdef";
 printf("%s\n", hexDigits);
 return (0);
 }
