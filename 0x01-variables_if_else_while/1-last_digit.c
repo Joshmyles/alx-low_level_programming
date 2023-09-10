@@ -5,7 +5,7 @@
 /*comment*/int main(void)/*comment*/
 {
 int n;
-srand(time(NULL));
+srand(time(0));
 n = rand() - RAND_MAX / 2;
 printf("Last digit of %d is ", n);
 int lastDigit = abs(n % 10);
