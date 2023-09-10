@@ -2,12 +2,12 @@
 
 /*comment*/int main(void)/*comment*/
 {
-int i;
-for (i = 0; i < 10; ++i)
+char i;
+for (i = '0'; i < '10'; ++i)
 {
-printf("%d\n", i);
+putchar("%d\n", i);
 }
-printf("\n");
+putchar("\n");
 return (0);
 }
 
