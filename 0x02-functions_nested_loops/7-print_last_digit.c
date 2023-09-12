@@ -7,7 +7,7 @@ if (lastDigit < 0)
 {
 lastDigit = -lastDigit;
 }
-putchar(lastDigit + '0');
-putchar('\n');
+_putchar(lastDigit + '0');
+_putchar('\n');
 return (lastDigit);
 }
