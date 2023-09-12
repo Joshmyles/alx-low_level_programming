@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /*comment*/int print_sign(int n)/*comment*/
 {
@@ -18,11 +17,4 @@ else
 putchar('-');
 return (-1);
 }
-}
-/*comment*/int main(void)/*comment*/
-{
-int number = 42;
-int result = print_sign(number);
-printf("\nResult: %d\n", result);
-return (0);
 }
