@@ -2,7 +2,7 @@
 
 /*comment*/int print_last_digit(int n)/*comment*/
 {
-int lastDigit = num % 10;
+int lastDigit = n % 10;
 if (lastDigit < 0)
 {
 lastDigit = -lastDigit;
