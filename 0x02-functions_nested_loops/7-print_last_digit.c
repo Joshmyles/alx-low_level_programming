@@ -7,6 +7,6 @@ if (lastDigit < 0)
 {
 lastDigit = -lastDigit;
 }
-printf("%d\n", lastDigit);
+_putchar("%d\n", lastDigit);
 return (lastDigit);
 }
