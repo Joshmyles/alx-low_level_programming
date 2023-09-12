@@ -2,11 +2,13 @@
 
 /*comment*/int print_last_digit(int n)/*comment*/
 {
-int lastDigit = n % 10;
-if (lastDigit < 0)
+int print_last_digit(int num)
 {
+int lastDigit = num % 10;
+if (lastDigit < 0) {
 lastDigit = -lastDigit;
 }
-_putchar("%d\n", lastDigit);
+putchar(lastDigit + '0');
+putchar('\n');
 return (lastDigit);
 }
