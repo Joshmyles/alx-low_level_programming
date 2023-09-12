@@ -2,10 +2,23 @@
 
 /*comment*/void times_table(void)/*comment*/
 {
-int i, result;
-for (i = 0; i <= 9; i++)
+int result;
+for (int i = 0; i <= 9; i++)
 {
-result = i * 9;
-printf("%d x 9 = %d\n", i, result);
+for (int j = 0; j <= 9; j++)
+{
+result = i * j;
+if (j != 0)
+{
+putchar(',');
+putchar(' ');
+}
+if (result < 10)
+{
+putchar(' ');
+}
+putchar(result / 10 + '0');
+putchar(result % 10 + '0');
+}putchar('\n');
 }
 }
