@@ -3,14 +3,5 @@
 
 int _putchar(char c);
 
-/*comment*/void print_alphabet(void)/*comment*/
-{
-char letter = 'a';
-while (letter <= 'z')
-{
-_putchar(letter);
-letter++;
-}
-_putchar('\n');
-}
+void print_alphabet(void);
 #endif /* MAIN_H */

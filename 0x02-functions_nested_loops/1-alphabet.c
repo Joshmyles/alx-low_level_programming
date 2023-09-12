@@ -1,12 +1,12 @@
 #include "main.h"
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+/*comment*/void print_alphabet(void)/*comment*/
 {
-print_alphabet();
-return (0);
+char letter = 'a';
+while (letter <= 'z')
+{
+_putchar(letter);
+letter++;
+}
+_putchar('\n');
 }
