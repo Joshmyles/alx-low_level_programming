@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-/*comment*/void print_to_98(int n)/*comment*/
+/*comment*/void print_times_table(int n)/*comment*/
 {
 int i, j, k;
 if (n >= 0 && n <= 15)
