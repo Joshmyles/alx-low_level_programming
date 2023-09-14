@@ -2,6 +2,7 @@
 
 /**
  * print_diagonal - the function
+ * @n: input value
  * Return: a triangle
  */
 
