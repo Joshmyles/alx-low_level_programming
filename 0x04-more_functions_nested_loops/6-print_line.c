@@ -14,10 +14,10 @@ _putchar('\n');
 }
 else
 {
-int i;
-for (i = 0; i < n; i++)
+while (n > 0)
 {
 _putchar('-');
+n--;
 }
 _putchar('\n');
 }
