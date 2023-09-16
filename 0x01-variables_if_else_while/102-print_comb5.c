@@ -1,26 +1,31 @@
 #include <stdio.h>
 
-/*comment*/int main(void)/*comment*/
+/**
+ * main - main function
+ * Return: a two pair combination
+ */
+
+int main(void)
 {
-for (int i = 0; i <= 99; i++) // Loop through the first two-digit number (0 to 99)
+for (int i = 0; i <= 99; i++)
 {
-for (int j = i; j <= 99; j++) // Loop through the second two-digit number (i to 99)
+for (int j = i; j <= 99; j++)
 {
-// Print the first two-digit number with leading zero if necessary
+/*print first two digit numbers with 0 if necessary*/
 putchar(i / 10 + '0');
 putchar(i % 10 + '0');
-// Print a space
-putchar(' ');       
-// Print the second two-digit number with leading zero if necessary
+putchar(' ');
+/*Print the second two-digit number with leading zero if necessary*/
 putchar(j / 10 + '0');
-putchar(j % 10 + '0');     
-if (i < 99 || j < 99) // Check if it's not the last combination (i < 99 or j < 99)
+putchar(j % 10 + '0');
+/*check if it is not 99*/
+if (i < 99 || j < 99)
 {
-putchar(','); // Print a comma
-putchar(' '); // Print a space
+putchar(',');
+putchar(' ');
 }
 }
 }
-putchar('\n'); // Print a newline character
+putchar('\n');
 return (0);
 }
