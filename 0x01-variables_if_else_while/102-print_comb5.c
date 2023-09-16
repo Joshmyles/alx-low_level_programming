@@ -7,9 +7,10 @@
 
 int main(void)
 {
-for (int i = 0; i <= 99; i++)
+int i, j;
+for (i = 0; i <= 99; i++)
 {
-for (int j = i; j <= 99; j++)
+for (j = i; j <= 99; j++)
 {
 /*print first two digit numbers with 0 if necessary*/
 putchar(i / 10 + '0');
