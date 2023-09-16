@@ -1,11 +1,16 @@
 #include <stdio.h>
 
-/*comment*/int main(void)/*comment*/
+/**
+ * main - main function
+ * Return: single digit numbers 
+ */
+
+int main(void)
 {
 int i;
-for (i = 0; i < 10; ++i)
+for (i = 0; i < 10; i++)
 {
-putchar('i');
+putchar("i");
 }
 putchar("\n");
 return (0);
