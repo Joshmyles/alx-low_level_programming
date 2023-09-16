@@ -2,7 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*comment*/int main(void)/*comment*/
+/**
+ * main - assign random number
+ * Return: last digit of n
+ */
+
+int main(void)
 {
 int n, lastDigit;
 srand(time(0));
