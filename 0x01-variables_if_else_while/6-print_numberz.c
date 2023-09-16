@@ -2,7 +2,7 @@
 
 /**
  * main - main function
- * Return: single digit numbers 
+ * Return: single digit numbers
  */
 
 int main(void)
