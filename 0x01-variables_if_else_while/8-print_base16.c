@@ -8,7 +8,24 @@
 int main(void)
 {
 int i;
-char hexDigits[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+char hexDigits[16];
+hexDigits[0] = '0';
+hexDigits[1] = '1';
+hexDigits[2] = '2';
+hexDigits[3] = '3';
+hexDigits[4] = '4';
+hexDigits[5] = '5';
+hexDigits[6] = '6';
+hexDigits[7] = '7';
+hexDigits[8] = '8';
+hexDigits[9] = '9';
+hexDigits[10] = '10';
+hexDigits[11] = '11';
+hexDigits[12] = '12';
+hexDigits[13] = '13';
+hexDigits[14] = '14';
+hexDigits[15] = '15';
+
 for (i = 0; i < 16; i++)
 {
 putchar(hexDigits[i]);
