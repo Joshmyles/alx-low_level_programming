@@ -19,12 +19,12 @@ hexDigits[6] = '6';
 hexDigits[7] = '7';
 hexDigits[8] = '8';
 hexDigits[9] = '9';
-hexDigits[10] = '10';
-hexDigits[11] = '11';
-hexDigits[12] = '12';
-hexDigits[13] = '13';
-hexDigits[14] = '14';
-hexDigits[15] = '15';
+hexDigits[10] = 'a';
+hexDigits[11] = 'b';
+hexDigits[12] = 'c';
+hexDigits[13] = 'd';
+hexDigits[14] = 'e';
+hexDigits[15] = 'f';
 
 for (i = 0; i < 16; i++)
 {
