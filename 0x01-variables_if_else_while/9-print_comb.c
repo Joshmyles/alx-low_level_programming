@@ -1,16 +1,21 @@
 #include <stdio.h>
 
-/*comment*/int main(void)/*comment*/
+/**
+ * main - main function
+ * Return: a combination
+ */
+
+int main(void)
 {
-for (int i = 0; i < 10; i++) // Loop through the single-digit numbers
+for (int i = 0; i <= 9; i++)
 {
-putchar(i + '0'); // Print the current digit as a character
-if (i < 9) // Check if it's not the last digit
+putchar(i + '0');
+if (i < 9)
 {
-putchar(','); // Print a comma
-putchar(' '); // Print a space
+putchar(',');
+putchar(' ');
 }
 }
-putchar('\n'); // Print a newline character
+putchar('\n');
 return (0);
 }
