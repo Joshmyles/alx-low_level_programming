@@ -1,9 +1,19 @@
 #include <stdio.h>
 
-/*comment*/int main(void)/*comment*/
+/**
+ * main - prints numbers of base 16 in lowercase
+ * Return: 0
+ */
+
+int main(void)
 {
+int i;
 char hexDigits[] = 16; 
-hexDigits = "0123456789abcdef";
-printf("%s\n", hexDigits);
+hexDigits = ['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'];
+for (i = 0; i < hexDigits.length; i++)
+{
+putchar(i);
+}
+putchar('\n');
 return (0);
 }
