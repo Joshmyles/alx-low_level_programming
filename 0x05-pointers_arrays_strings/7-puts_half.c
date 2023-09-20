@@ -15,7 +15,8 @@ while (str[length] != '\0')
 {
 length++;
 }
-int start = length / 2;
+int start;
+start = length / 2;
 if (length % 2 != 0)
 {
 start = (length - 1) / 2;
