@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * point_array - the function
+ * print_array - the function
  * @a: input
  * @n: input
  * Return: output
