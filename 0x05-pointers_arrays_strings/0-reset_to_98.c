@@ -1,6 +1,6 @@
 /**
  * reset_to_98 - the function
- * @*n: the input
+ * @n: the input
  * Return: 98 to pointer
  */
 
