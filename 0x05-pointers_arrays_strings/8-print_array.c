@@ -3,7 +3,7 @@
 /**
  * point_array - the function
  * @a: input
- * @n - input
+ * @n: input
  * Return: output
  */
 
