@@ -8,7 +8,7 @@
  * Return: output
  */
 
-bool is_palindrome(char *s)
+int is_palindrome(char *s)
 {
 int left = 0;
 int right = strlen(s) - 1;
@@ -16,10 +16,10 @@ while (left < right)
 {
 if (s[left] != s[right])
 {
-return (false);
+return (0);
 }
 left++;
 right--;
 }
-return (true);
+return (1);
 }
