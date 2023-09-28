@@ -3,7 +3,7 @@
 /**
  * _print_rev_recursion - the function
  * @s: the input
- * @Return: the function recursive
+ *
  */
 
 void _print_rev_recursion(char *s)
