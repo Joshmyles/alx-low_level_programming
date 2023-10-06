@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _putchar - the function
+ * _isupper - the function
  * @c: input
  *
  * Return: nothing
  */
 
-int _putchar(char c) {}
+int _isupper(int c) { }
