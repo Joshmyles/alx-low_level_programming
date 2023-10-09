@@ -42,7 +42,7 @@ for (i = 0; i < height; i++)
 {
 for (j = 0; j < width; j++)
 {
-printf("%2d ", grid[i][j]);
+printf("%2d", grid[i][j]);
 }
 printf("\n");
 }
