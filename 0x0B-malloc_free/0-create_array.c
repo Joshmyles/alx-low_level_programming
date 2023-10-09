@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include "main.h"
 
 /**
@@ -13,7 +14,7 @@ if (size == 0)
 {
 return (NULL);
 }
-char *array = (char *)malloc(size * sizeof(char));
+char *array = (char *) malloc(size * sizeof(char));
 if (array == NULL)
 {
 return (NULL);
