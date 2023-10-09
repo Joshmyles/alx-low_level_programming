@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * alloc_grid - the function
+ * @width: input
+ * @height: input
+ * Return: pointer to 2 dimensional array of integers
+ */
+
+int **alloc_grid(int width, int height)
+{
+int **grid;
+int i, j;
+if (width <= 0 || height <= 0)
+{
+return (NULL);
+}
+grid = (int **)malloc(height * sizeof(int *));
+if (grid == NULL)
+{
+return (NULL);
+}
+for (i = 0; i < height; i++)
+{
+grid[i] = (int *)malloc(width * sizeof(int));
+if (grid[i] == NULL)
+{
+for (j = 0; j < i; j++)
+{
+free(grid[j]);
+}
+free(grid);
+return (NULL);
+}
+for (j = 0; j < width; j++)
+{
+grid[i][j] = 0;
+}
+}
+return (grid);
+}
+
+/**
+ * print_grid - function
+ * @grid: pointer to pointer
+ * @width: input
+ * @height: input
+ * Return: nothing
+ */
+
+void print_grid(int **grid, int width, int height)
+{
+int i, j;
+for (i = 0; i < height; i++)
+{
+for (j = 0; j < width; j++)
+{
+printf("%2d ", grid[i][j]);
+}
+printf("\n");
+}
+}
