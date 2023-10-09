@@ -44,7 +44,6 @@ for (j = 0; j < width; j++)
 {
 printf("%2d", grid[i][j]);
 }
-printf("\n");
 }
 return (grid);
 }
