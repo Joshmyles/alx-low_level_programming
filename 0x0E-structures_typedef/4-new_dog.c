@@ -19,15 +19,19 @@ if (new_dog == NULL)
 {
 return (NULL);
 }
-new_dog->name = strdup(name);
-new_dog->owner = strdup(owner);
-if (new_dog->name == NULL || new_dog->owner == NULL)
+new_dog->name = (name != NULL) ? strdup(name) : NULL;
+if (new_dog->name == NULL && name != NULL)
 {
-free(new_dog->name);
-free(new_dog->owner);
 free(new_dog);
 return (NULL);
 }
 new_dog->age = age;
+new_dog->owner = (owner != NULL) ? strdup(owner) : NULL;
+if (new_dog->owner == NULL && owner != NULL)
+{
+free(new_dog->name);
+free(new_dog);
+return (NULL);
+}
 return (new_dog);
 }
