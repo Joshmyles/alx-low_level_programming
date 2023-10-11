@@ -8,7 +8,7 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-struct op ops[] = {
+op_t ops[] = {
 {"+", op_add}, /* Addition operator */
 {"-", op_sub}, /* Subtraction operator */
 {"*", op_mul}, /* Multiplication operator */

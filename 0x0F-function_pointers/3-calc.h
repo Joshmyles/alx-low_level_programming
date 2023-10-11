@@ -1,5 +1,5 @@
-#ifndef 3_CALC_H_
-#define 3_CALC_H_
+#ifndef _3_CALC_H_
+#define _3_CALC_H_
 
 /**
  * struct op - Structure to define an operator with its respective function
@@ -16,8 +16,8 @@ int (*f)(int a, int b);
 int (*get_op_func(char *s))(int, int);
 int op_add(int a, int b);
 int op_sub(int a, int b);
-int op_mul(int a, b);
-int op_div(int a, b);
-int op_mod(int a, b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
 
-#endif /* 3_CALC_H_ */
+#endif /*_3_CALC_H_ */
