@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "function_pointers.h"
 
 /**
  * print_name - the function
@@ -9,5 +9,5 @@
 
 void print_name(char *name)
 {
-printf("Name: %s\n", name);
+_putchar("Name: %s\n", name);
 }
