@@ -3,11 +3,11 @@
 /**
  * print_name - the function
  * @name: the input
- *
+ * @f: function <optional>
  * Return: nothing
  */
 
-void print_name(char *name)
+void print_name(char *name, void (*f)(char *))
 {
-_putchar("Name: %s\n", name);
+f(name);
 }
