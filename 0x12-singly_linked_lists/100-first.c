@@ -1,27 +1,11 @@
 #include <stdio.h>
-#include <string.h>
+
+void __attribute__ ((constructor)) my_startup_function();
 
 /**
- * myStartupFunction - the function
+ * my_startup_function - Function that runs before main
  */
-void myStartupFunction(void) __attribute__((constructor));
-
-/**
- * myStartupFunction - the function
- */
-void myStartupFunction(void)
+void my_startup_function(void)
 {
-string i;
-i = "You're beat! and yet, you must allow,\nI bore my house upon my back!\n";
-printf(i);
-}
-
-/**
- * main - the function
- * Return: 0
- */
-int main(void)
-{
-printf("Main function is executed.\n");
-return (0);
+printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
 }
