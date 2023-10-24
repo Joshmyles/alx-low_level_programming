@@ -1,17 +1,20 @@
 #include "lists.h"
 
 /**
- * free_listint2 - Frees a listint_t list and sets the head NULL
- * @head: A pointer to a pointer to the head of the list
+ * print_listint - Prints all the elements of a list
+ * @h: A pointer to the head of the list
+ * Return: The number of nodes
  */
-void free_listint2(listint_t **head)
+size_t print_listint(const listint_t *h)
 {
-listint_t *current;
+size_t count = 0;
 
-while (*head != NULL)
+while (h != NULL)
 {
-current = *head;
-*head = (*head)->next;
-free(current);
+printf("%d\n", h->n);
+h = h->next;
+count++;
 }
+
+return (count);
 }
