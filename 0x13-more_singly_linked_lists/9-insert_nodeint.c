@@ -1,39 +1,48 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - Deletes the node at a given position.
- * @head: A pointer to the head of the list.
- * @index: The index of the node to be deleted.
- * Return: 1 if it succeeded, -1 if it failed.
+ * insert_nodeint_at_index - Inserts a new node at a position
+ * @head: A pointer to a pointer to the head of the list
+ * @idx: The index at which the new node should be inserted
+ * @n: The data for the new node
+ * Return: The address of the new node, or NULL
  */
-int delete_nodeint_at_index(listint_t **head, unsigned int index)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-listint_t *current, *temp;
-unsigned int i;
+listint_t *new_node, *temp;
+unsigned int i = 0;
 
-if (head == NULL || *head == NULL)
-return (-1);
+if (head == NULL)
+return (NULL);
 
-current = *head;
+new_node = malloc(sizeof(listint_t));
+if (new_node == NULL)
+return (NULL);
 
-if (index == 0)
+new_node->n = n;
+
+if (idx == 0)
 {
-*head = current->next;
-free(current);
-return (1);
+new_node->next = *head;
+*head = new_node;
+return (new_node);
 }
 
-for (i = 0; i < index - 1 && current != NULL; i++)
+temp = *head;
+while (temp != NULL && i < idx - 1)
 {
-current = current->next;
+temp = temp->next;
+i++;
 }
 
-if (current == NULL || current->next == NULL)
-return (-1);
+if (temp == NULL)
+{
+free(new_node);
+return (NULL);
+}
 
-temp = current->next;
-current->next = temp->next;
-free(temp);
+new_node->next = temp->next;
+temp->next = new_node;
 
-return (1);
+return (new_node);
 }
