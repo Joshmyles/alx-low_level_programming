@@ -1,4 +1,4 @@
-CC=g++
+CC=gcc
 
 SRC= school.c main.c
 
