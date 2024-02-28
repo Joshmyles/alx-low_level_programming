@@ -1,0 +1,11 @@
+CC=g++
+
+SRC= school.c main.c
+
+school: $(SRC)
+	$(CC) -o school $(SRC)
+
+all: school
+
+clean:
+	rm -f school
