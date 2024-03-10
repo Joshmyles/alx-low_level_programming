@@ -3,12 +3,14 @@
 /**
  * main - function
  * @argc: input
- * @argv: optional
+ * @argv: char
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
-(void)argv;
-printf("%d\n", argc - 1);
+for (int i = 0; i < argc; i++)
+{
+printf("%s\n", argv[i]);
+}
 return (0);
 }
