@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+
 
 /**
  * _strstr - the function
