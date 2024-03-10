@@ -11,21 +11,18 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int count = 0;
-int isAccept = 0;
-while (*s && *s != '0')
+while (*s != '\0')
 {
-isAccept = 0;
-char *temp = accept;
-while (*temp)
+char *ptr = accept;
+while (*ptr != '\0')
 {
-if (*s == *temp)
+if (*s == *ptr)
 {
-isAccept = 1;
 break;
 }
-temp++;
+ptr++;
 }
-if (isAccept)
+if (*ptr != '\0')
 {
 count++;
 s++;
