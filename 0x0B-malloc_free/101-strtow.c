@@ -1,11 +1,21 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * is_space - function
+ * @c: input
+ * Return: count
+ */
 int is_space(char c)
 {
 return (c == ' ');
 }
 
+/**
+ * count_words - function
+ * @str: input
+ * Return: count
+ */
 int count_words(char *str)
 {
 int count = 0;
@@ -26,6 +36,11 @@ str++;
 return (count);
 }
 
+/**
+ * strtow - function
+ * @str: input pointer
+ * Return: NULL
+ */
 char **strtow(char *str)
 {
 int num_words, word_length, i, word_index, in_word;
