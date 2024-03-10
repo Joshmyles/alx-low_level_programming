@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+
 
 /**
  * _strpbrk - the function
@@ -10,16 +12,16 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-while (*s)
+while (*s != '\0')
 {
-char *temp = accept;
-while (*temp)
+char *ptr = accept;
+while (*ptr != '\0')
 {
-if (*s == *temp)
+if (*s == *ptr)
 {
 return (s);
 }
-temp++;
+ptr++;
 }
 s++;
 }
