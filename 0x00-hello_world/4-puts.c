@@ -1,8 +1,13 @@
 #include <stdio.h>
-/*Normal output*/int main(void)/*Normal output*/
+
+/**
+ * main - main function
+ *
+ * Return: 0
+ */
+
+int main(void)
 {
-/*Normal output*/
 puts("\"Programming is like building a multilingual puzzle");
-/*Normal output*/
 return (0);
 }
